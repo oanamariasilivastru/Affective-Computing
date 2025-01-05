@@ -86,10 +86,13 @@ This project implements an emotion recognition model based on MobileNetV2 as the
 - **Epochs:** 100
 - **Batch size:** 64
 
-## Results
-- **Final Accuracy (Train):** 88.7%
-- **Final Loss (Validation):** 0.18
-
+### Training Progress (FER2013)
+- **Accuracy**:  
+  - **Training**: 97.5%  
+  - **Validation**: 88.3% 
+- **Loss**:  
+  - **Training**: 0.05  
+  - **Validation**: 0.18
 ## Confusion Matrix
 The model performance was evaluated using a confusion matrix to visualize the classification results for each emotion category.
 
