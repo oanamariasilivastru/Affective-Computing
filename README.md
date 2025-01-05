@@ -72,7 +72,7 @@ For the FER2013 dataset, a VGG-inspired convolutional neural network (CNN) is us
   - **Training**: Decreases from 1.9 to 0.72  
   - **Validation**: Decreases from 1.8 to 0.75
       
-# Emotion Recognition - MobileNetV2 with CNN Blocks
+# Emotion Recognition - MobileNetV2 with CNN Blocks (AffectNet DataSet)
 
 This project implements an emotion recognition model based on MobileNetV2 as the base architecture. On top of MobileNetV2, 4 additional convolutional blocks were added to enhance feature extraction and classification performance. The model classifies facial images into various emotion categories.
 
