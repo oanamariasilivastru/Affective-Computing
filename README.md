@@ -35,37 +35,6 @@ Affective-Computing/
 The primary model used is based on **Faster R-CNN** and **ResNet** backbones, fine-tuned on facial datasets for detection and recognition tasks.
 FER2013 Model
 
-For the FER2013 dataset, a VGG-inspired convolutional neural network (CNN) is used. This model consists of multiple convolutional layers with increasing filter sizes, batch normalization, and ReLU activation functions. MaxPooling layers are applied to progressively reduce the spatial dimensions. Fully connected layers at the end are followed by dropout for regularization and a final softmax layer for emotion classification.
-
-Model Configuration (FER2013)
-
-Input Size: 48x48 grayscale images (single channel)
-
-Architecture: VGG-style CNN with 4 convolutional blocks
-
-Batch Size: 64
-
-Learning Rate: 0.001 (Adam optimizer)
-
-Dropout: 50% on fully connected layers
-
-Epochs: 120
-
-Augmentations: Rotation, width/height shift, shear, zoom, horizontal flip
-
-Training Progress (FER2013)
-
-Accuracy:
-
-Training: Increases from 50% to 73%
-
-Validation: Increases from 48% to 68%
-
-Loss:
-
-Training: Decreases from 1.9 to 0.72
-
-Validation: Decreases from 1.8 to 0.75
 ## Training
 ### Training Configuration
 - **Batch Size**: 8
@@ -81,6 +50,53 @@ Validation: Decreases from 1.8 to 0.75
 - **Loss**:
   - Training: Decreases from 0.9 to 0.04
   - Validation: Decreases from 0.8 to 0.05
+  - 
+## FER2013 Model
+
+For the FER2013 dataset, a VGG-inspired convolutional neural network (CNN) is used. This model consists of multiple convolutional layers with increasing filter sizes, batch normalization, and ReLU activation functions. MaxPooling layers are applied to progressively reduce the spatial dimensions. Fully connected layers at the end are followed by dropout for regularization and a final softmax layer for emotion classification.
+
+### Model Configuration (FER2013)
+- **Input Size**: 48x48 grayscale images (single channel)  
+- **Architecture**: VGG-style CNN with 4 convolutional blocks  
+- **Batch Size**: 64  
+- **Learning Rate**: 0.001 (Adam optimizer)  
+- **Dropout**: 50% on fully connected layers  
+- **Epochs**: 120  
+- **Augmentations**: Rotation, width/height shift, shear, zoom, horizontal flip  
+
+### Training Progress (FER2013)
+- **Accuracy**:  
+  - **Training**: Increases from 50% to 73%  
+  - **Validation**: Increases from 48% to 68%  
+- **Loss**:  
+  - **Training**: Decreases from 1.9 to 0.72  
+  - **Validation**: Decreases from 1.8 to 0.75
+      
+# Emotion Recognition - MobileNetV2 with CNN Blocks
+
+This project implements an emotion recognition model based on MobileNetV2 as the base architecture. On top of MobileNetV2, 4 additional convolutional blocks were added to enhance feature extraction and classification performance. The model classifies facial images into various emotion categories.
+
+## Model Configuration
+- **Base Model:** MobileNetV2 (pre-trained on ImageNet)
+- **Additional Layers:** 4 convolutional blocks (Conv2D, BatchNormalization, ReLU, MaxPooling)
+- **Fully Connected Layers:** Dense (512, 256) with Dropout (0.5)
+- **Optimizer:** Adam
+- **Loss Function:** Categorical Crossentropy
+- **Image Size:** 48x48 (grayscale)
+- **Epochs:** 100
+- **Batch size:** 64
+
+## Results
+- **Final Accuracy (Train):** 88.7%
+- **Final Loss (Validation):** 0.18
+
+## Confusion Matrix
+The model performance was evaluated using a confusion matrix to visualize the classification results for each emotion category.
+
+## Usage
+To train the model:
+```bash
+python train_model.py
 
 ## Visualization
 Learning curves for accuracy and loss during training and validation.
