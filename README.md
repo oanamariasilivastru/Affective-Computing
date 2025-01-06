@@ -70,6 +70,7 @@ Affective-Computing/
 
 ![darkNet_original](media/darkNet_original.jpg)
 ![darkNet_processed](media/darkNet_processed.jpg)
+
 **Training Progress:**
 - **Accuracy:** 40% → 92% (training), 42% → 90% (validation)
 - **Loss:** 0.9 → 0.04 (training), 0.8 → 0.05 (validation)
@@ -83,12 +84,13 @@ Affective-Computing/
 ![fer_preprocessing](media/fer_preprocessing.png)
 ![fer_plot_validation](media/fer_plot_validation.png)
 ![fer_plot_loss](media/fer_plot_loss.png)
-![fer_confusionMatrix](media/fer_confusionMatrix.png)
+![fer_confusionMatrix](media/fer_confusionMatrix.jpg)
 
 ### 3. MobileNetV2 with CNN layers(AffectNet)
 **Training Progress:**
 - **Accuracy:** 97.5% (training), 88.3% (validation)
 - **Loss:** 0.05 (training), 0.18 (validation)
+  
 ![affectNet_occlusion](media/affectNet_occlusion.jpg)
 ![affectNet_training](media/affectNet_training.jpg)
 ![affectNet_plots](media/affectNet_plots.jpg)
