@@ -25,7 +25,7 @@ Affective-Computing/
 │
 └── README.md                   # Project documentation
 ```
-
+![realtime_emotion_counts](media/realtime_emotion_counts.jpg)
 ## Datasets
 - **DarkFace** – Annotated low-light images for face detection.
 - **AffectNet** – Large dataset for facial expressions and affect analysis.
@@ -69,7 +69,7 @@ Affective-Computing/
 - **Augmentations:** Brightness/Contrast enhancement, Gaussian blur, Histogram Equalization
 
 ![darkNet_original](media/darkNet_original.jpg)
-![darkNet_preprocess](media/darkNet_preprocess.jpg)
+![darkNet_processed](media/darkNet_processed.jpg)
 **Training Progress:**
 - **Accuracy:** 40% → 92% (training), 42% → 90% (validation)
 - **Loss:** 0.9 → 0.04 (training), 0.8 → 0.05 (validation)
@@ -79,13 +79,20 @@ Affective-Computing/
 - **Accuracy:** 50% → 73% (training), 48% → 68% (validation)
 - **Loss:** 1.9 → 0.72 (training), 1.8 → 0.75 (validation)
 
-### 3. MobileNetV2 (AffectNet)
+
+![fer_preprocessing](media/fer_preprocessing.png)
+![fer_plot_validation](media/fer_plot_validation.png)
+![fer_plot_loss](media/fer_plot_loss.png)
+![fer_confusionMatrix](media/fer_confusionMatrix.png)
+
+### 3. MobileNetV2 with CNN layers(AffectNet)
 **Training Progress:**
 - **Accuracy:** 97.5% (training), 88.3% (validation)
 - **Loss:** 0.05 (training), 0.18 (validation)
-
-## Confusion Matrix
-A confusion matrix is used to evaluate model performance, visualizing the classification results for each emotion category.
+![affectNet_occlusion](media/affectNet_occlusion.jpg)
+![affectNet_training](media/affectNet_training.jpg)
+![affectNet_plots](media/affectNet_plots.jpg)
+![affectNet_confusionMatrix](media/affectNet_confusionMatrix.jpg)
 
 ## Usage
 ### Training the Model
