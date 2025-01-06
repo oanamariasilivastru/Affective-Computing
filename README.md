@@ -69,7 +69,7 @@ Affective-Computing/
 - **Augmentations:** Brightness/Contrast enhancement, Gaussian blur, Histogram Equalization
 
 ![darkNet_original](media/darkNet_original.jpg)
-
+![darkNet_preprocess](media/darkNet_preprocess.jpg)
 **Training Progress:**
 - **Accuracy:** 40% → 92% (training), 42% → 90% (validation)
 - **Loss:** 0.9 → 0.04 (training), 0.8 → 0.05 (validation)
